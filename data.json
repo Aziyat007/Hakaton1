@@ -28,5 +28,29 @@
     "year of release": "2020",
     "descrioption": "laptop",
     "price": 90000.0
+  },
+  {
+    "id": 8,
+    "brand": "metro",
+    "model": "retro",
+    "year of release": "asd",
+    "descrioption": "sa",
+    "price": 90000.0
+  },
+  {
+    "id": 10,
+    "brand": "naruto",
+    "model": "uzumaki",
+    "year of release": "olo",
+    "descrioption": "lolo",
+    "price": 2000000.0
+  },
+  {
+    "id": 13,
+    "brand": "\u044b",
+    "model": "2",
+    "year of release": "2\u0444",
+    "descrioption": "\u0444\u0432",
+    "price": 21.0
   }
 ]

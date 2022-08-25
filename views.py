@@ -1,3 +1,4 @@
+from curses.ascii import isdigit
 import json
 FILE_PATH = 'data.json'
 
@@ -23,14 +24,26 @@ def get_id():
 
 def create_product():
     data = get_data()
-    product = {
-        'id': get_id(),
-        'brand': input('Введите название бренда: '),
-        'model': input('Введите модель ноутбука: '),
-        'year of release': input('Введите год выпуска: '),
-        'descrioption': input('Введите описание: '),
-        'price' : round(float(input('Введите цену: ')), 2)
-        }
+    try:
+        product = {
+            'id': get_id(),
+            'brand': input('Введите название бренда: '),
+            'model': input('Введите модель ноутбука: '),
+            'year of release': input('Введите год выпуска: '),
+            'descrioption': input('Введите описание: '),
+            'price' : round(float(input('Введите цену: ')), 2)
+            }
+    except ValueError:
+        print('Вы ввели не те символы')
+        
+    else:
+        data.append(product)
+        with open(FILE_PATH, 'w') as file:
+            json.dump(data, file,indent=2)
+            catalog(product)
+    return 'Создан'
+
+        
     data.append(product)
 
     with open(FILE_PATH, 'w') as file:
