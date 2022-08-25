@@ -1,0 +1,32 @@
+[
+  {
+    "id": 0,
+    "brand": "acer",
+    "model": "Swift",
+    "year_of_release": 2020,
+    "description": "magic laptop",
+    "price": 43000
+  },
+  {
+    "id": 2,
+    "brand": "acer",
+    "model": "swift",
+    "year of releasedescrioption": "2",
+    "price": 43000.0
+  },
+  {
+    "id": 3,
+    "brand": "fpple",
+    "model": "MSi",
+    "year of releasedescrioption": "LAptop",
+    "price": 90000.0
+  },
+  {
+    "id": 4,
+    "brand": "asus",
+    "model": "rock",
+    "year of release": "2020",
+    "descrioption": "laptop",
+    "price": 90000.0
+  }
+]
